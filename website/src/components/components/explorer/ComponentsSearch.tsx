@@ -13,7 +13,7 @@ export const ComponentsSearch = memo(({ term, onChange }: ComponentsSearchProps)
 
     return (
         <Container>
-            <Input type="text" onChange={handleSearch} placeholder="Search" value={term} />
+            <Input type="text" onChange={handleSearch} placeholder="搜索" value={term} />
             <StyledSearchIcon />
             {term.length > 0 && (
                 <Clear onClick={handleClear}>

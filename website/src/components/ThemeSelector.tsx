@@ -34,7 +34,7 @@ const ThemeSelector = () => {
                 isActive={themeId === 'light'}
                 onClick={() => setTheme('light')}
             >
-                light
+                亮
             </ToggleItem>
             <Switch
                 id="themeToggle"
@@ -47,7 +47,7 @@ const ThemeSelector = () => {
                 isActive={themeId === 'dark'}
                 onClick={() => setTheme('dark')}
             >
-                dark
+                暗
             </ToggleItem>
         </ToggleContainer>
     )

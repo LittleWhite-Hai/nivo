@@ -17,13 +17,13 @@ export const FullNav = memo(() => {
         <Container>
             <InnerContainer>
                 <Components>
-                    <SectionTitle>Components</SectionTitle>
+                    <SectionTitle>组件</SectionTitle>
                     {nav.components.map(component => (
                         <FullNavComponentLink key={component.id} {...component} />
                     ))}
                 </Components>
                 <Guides>
-                    <SectionTitle>Guides</SectionTitle>
+                    <SectionTitle>导航</SectionTitle>
                     {nav.guides.map(guide => (
                         <InternalLink key={guide.path} to={guide.path}>
                             <GuideIcon />
@@ -32,11 +32,11 @@ export const FullNav = memo(() => {
                     ))}
                 </Guides>
                 <Other>
-                    <SectionTitle>Other</SectionTitle>
-                    <InternalLink to="/about/">About</InternalLink>
-                    <InternalLink to="/references/">References</InternalLink>
+                    <SectionTitle>其它</SectionTitle>
+                    <InternalLink to="/about/">关于</InternalLink>
+                    <InternalLink to="/references/">索引</InternalLink>
                     <InternalLink to="/faq/">FAQ</InternalLink>
-                    <ExternalLink
+                    {/* <ExternalLink
                         href="https://nivo.rocks/storybook/"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -73,7 +73,7 @@ export const FullNav = memo(() => {
                         <FaTwitter />
                         <span>Twitter</span>
                         <ExternalLinkIcon />
-                    </ExternalLink>
+                    </ExternalLink> */}
                 </Other>
             </InnerContainer>
         </Container>

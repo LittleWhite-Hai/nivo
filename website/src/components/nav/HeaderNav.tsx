@@ -17,15 +17,15 @@ export const HeaderNav = ({ isNavOpen, toggleNav }: HeaderNavProps) => {
     return (
         <Container>
             <HeaderItem>
-                Why nivo? <FiChevronDown />
+                数据流动 <FiChevronDown />
                 <HeaderSub>
-                    <HeaderSubItem to="/about/">About</HeaderSubItem>
-                    <HeaderSubItem to="/references/">References</HeaderSubItem>
+                    <HeaderSubItem to="/about/">关于</HeaderSubItem>
+                    <HeaderSubItem to="/references/">索引</HeaderSubItem>
                 </HeaderSub>
             </HeaderItem>
-            <HeaderInternalLink to="/components/">Components</HeaderInternalLink>
+            <HeaderInternalLink to="/components/">组件</HeaderInternalLink>
             <HeaderItem>
-                Guides <FiChevronDown />
+                导航 <FiChevronDown />
                 <HeaderSub>
                     {nav.guides.map(guide => (
                         <HeaderSubItem key={guide.path} to={guide.path}>
@@ -34,39 +34,24 @@ export const HeaderNav = ({ isNavOpen, toggleNav }: HeaderNavProps) => {
                     ))}
                 </HeaderSub>
             </HeaderItem>
-            <HeaderExternalLink
+            {/* <HeaderExternalLink
                 href="https://nivo.rocks/storybook/"
                 target="_blank"
                 rel="noopener noreferrer"
             >
                 storybook
                 <FiExternalLink />
-            </HeaderExternalLink>
-            <HeaderExternalLink
+            </HeaderExternalLink> */}
+            {/* <HeaderExternalLink
                 href="https://opencollective.com/nivo"
                 target="_blank"
                 rel="noopener noreferrer"
             >
                 Donate
                 <FiExternalLink />
-            </HeaderExternalLink>
+            </HeaderExternalLink> */}
             <ThemeSelector />
-            <IconExternalLink
-                href="https://github.com/plouc/nivo"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="GitHub"
-            >
-                <FaGithub />
-            </IconExternalLink>
-            <IconExternalLink
-                href="https://twitter.com/benitteraphael"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Twitter"
-            >
-                <FaTwitter />
-            </IconExternalLink>
+
             <NavToggleButton isOpen={isNavOpen} onClick={toggleNav} />
         </Container>
     )

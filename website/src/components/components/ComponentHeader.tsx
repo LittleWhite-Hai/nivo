@@ -1,6 +1,7 @@
 import React, { memo } from 'react'
 import styled from 'styled-components'
 import media from '../../theming/mediaQueries'
+import translate from '../../translate'
 
 interface ComponentHeaderProps {
     chartClass: string
@@ -10,7 +11,7 @@ interface ComponentHeaderProps {
 export const ComponentHeader = memo(({ chartClass, tags = [] }: ComponentHeaderProps) => {
     return (
         <Container>
-            <Title>{chartClass}</Title>
+            <Title>{translate(chartClass)}</Title>
             <Tags>
                 {tags.map(tag => (
                     <Tag key={tag}>{tag}</Tag>

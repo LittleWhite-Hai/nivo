@@ -31,7 +31,7 @@ import { ChartNavData } from '../types'
 
 export const components: ChartNavData[] = [
     {
-        name: 'AreaBump',
+        name: '曲线区块',
         id: 'area-bump',
         tags: areaBump.AreaBump.tags,
         flavors: {
@@ -39,7 +39,7 @@ export const components: ChartNavData[] = [
         },
     },
     {
-        name: 'Bar',
+        name: '柱状图',
         id: 'bar',
         tags: bar.Bar.tags,
         flavors: {
@@ -49,7 +49,7 @@ export const components: ChartNavData[] = [
         },
     },
     {
-        name: 'BoxPlot',
+        name: '箱线图',
         id: 'boxplot',
         tags: boxplot.BoxPlot.tags,
         flavors: {
@@ -57,7 +57,7 @@ export const components: ChartNavData[] = [
         },
     },
     {
-        name: 'CirclePacking',
+        name: '圆集合',
         id: 'circle-packing',
         tags: circlePacking.CirclePacking.tags,
         flavors: {
@@ -68,7 +68,7 @@ export const components: ChartNavData[] = [
         },
     },
     {
-        name: 'Bump',
+        name: '趋势变化图',
         id: 'bump',
         tags: bump.Bump.tags,
         flavors: {
@@ -76,7 +76,7 @@ export const components: ChartNavData[] = [
         },
     },
     {
-        name: 'Bullet',
+        name: '子弹图',
         id: 'bullet',
         tags: bullet.Bullet.tags,
         flavors: {
@@ -84,7 +84,7 @@ export const components: ChartNavData[] = [
         },
     },
     {
-        name: 'Calendar',
+        name: '日历标注图',
         id: 'calendar',
         tags: calendar.Calendar.tags,
         flavors: {
@@ -94,7 +94,7 @@ export const components: ChartNavData[] = [
         },
     },
     {
-        name: 'Choropleth',
+        name: '等值区域图',
         id: 'choropleth',
         tags: choropleth.Choropleth.tags,
         flavors: {
@@ -103,7 +103,7 @@ export const components: ChartNavData[] = [
         },
     },
     {
-        name: 'Chord',
+        name: '弦图',
         id: 'chord',
         tags: chord.Chord.tags,
         flavors: {
@@ -113,7 +113,7 @@ export const components: ChartNavData[] = [
         },
     },
     {
-        name: 'Funnel',
+        name: '漏斗图',
         id: 'funnel',
         tags: funnel.Funnel.tags,
         flavors: {
@@ -121,7 +121,7 @@ export const components: ChartNavData[] = [
         },
     },
     {
-        name: 'GeoMap',
+        name: '地理图',
         id: 'geomap',
         tags: geomap.GeoMap.tags,
         flavors: {
@@ -130,7 +130,7 @@ export const components: ChartNavData[] = [
         },
     },
     {
-        name: 'HeatMap',
+        name: '热图',
         id: 'heatmap',
         tags: heatmap.HeatMap.tags,
         flavors: {
@@ -140,7 +140,7 @@ export const components: ChartNavData[] = [
         },
     },
     {
-        name: 'Line',
+        name: '折线图',
         id: 'line',
         tags: line.Line.tags,
         flavors: {
@@ -150,7 +150,7 @@ export const components: ChartNavData[] = [
         },
     },
     {
-        name: 'Marimekko',
+        name: '分区柱状图',
         id: 'marimekko',
         tags: marimekko.Marimekko.tags,
         flavors: {
@@ -158,7 +158,7 @@ export const components: ChartNavData[] = [
         },
     },
     {
-        name: 'Network',
+        name: '拓扑图',
         id: 'network',
         tags: network.Network.tags,
         flavors: {
@@ -167,7 +167,7 @@ export const components: ChartNavData[] = [
         },
     },
     {
-        name: 'ParallelCoordinates',
+        name: '平行坐标图',
         id: 'parallel-coordinates',
         tags: parallelCoordinates.ParallelCoordinates.tags,
         flavors: {
@@ -176,7 +176,7 @@ export const components: ChartNavData[] = [
         },
     },
     {
-        name: 'Pie',
+        name: '饼图',
         id: 'pie',
         tags: pie.Pie.tags,
         flavors: {
@@ -186,7 +186,7 @@ export const components: ChartNavData[] = [
         },
     },
     {
-        name: 'Radar',
+        name: '雷达图',
         id: 'radar',
         tags: radar.Radar.tags,
         flavors: {
@@ -195,7 +195,7 @@ export const components: ChartNavData[] = [
         },
     },
     {
-        name: 'RadialBar',
+        name: '径向条形图',
         id: 'radial-bar',
         tags: radialBar.RadialBar.tags,
         flavors: {
@@ -203,7 +203,7 @@ export const components: ChartNavData[] = [
         },
     },
     {
-        name: 'Sankey',
+        name: '桑基图',
         id: 'sankey',
         tags: sankey.Sankey.tags,
         flavors: {
@@ -212,7 +212,7 @@ export const components: ChartNavData[] = [
         },
     },
     {
-        name: 'ScatterPlot',
+        name: '散点图',
         id: 'scatterplot',
         tags: scatterplot.ScatterPlot.tags,
         flavors: {
@@ -221,7 +221,7 @@ export const components: ChartNavData[] = [
         },
     },
     {
-        name: 'Stream',
+        name: '流图',
         id: 'stream',
         tags: stream.Stream.tags,
         flavors: {
@@ -229,7 +229,7 @@ export const components: ChartNavData[] = [
         },
     },
     {
-        name: 'Sunburst',
+        name: '旭日图',
         id: 'sunburst',
         tags: sunburst.Sunburst.tags,
         flavors: {
@@ -238,7 +238,7 @@ export const components: ChartNavData[] = [
         },
     },
     {
-        name: 'SwarmPlot',
+        name: '柱形散点图',
         id: 'swarmplot',
         tags: swarmplot.SwarmPlot.tags,
         flavors: {
@@ -247,7 +247,7 @@ export const components: ChartNavData[] = [
         },
     },
     {
-        name: 'TimeRange',
+        name: '时间标注图',
         id: 'time-range',
         tags: timeRange.TimeRange.tags,
         flavors: {
@@ -255,7 +255,7 @@ export const components: ChartNavData[] = [
         },
     },
     {
-        name: 'Tree',
+        name: '树形图',
         id: 'tree',
         tags: tree.Tree.tags,
         flavors: {
@@ -264,7 +264,7 @@ export const components: ChartNavData[] = [
         },
     },
     {
-        name: 'TreeMap',
+        name: '矩形树图',
         id: 'treemap',
         tags: treemap.TreeMap.tags,
         flavors: {
@@ -275,7 +275,7 @@ export const components: ChartNavData[] = [
         },
     },
     {
-        name: 'Voronoi',
+        name: 'Voronoi图',
         id: 'voronoi',
         tags: voronoi.Voronoi.tags,
         flavors: {
@@ -283,7 +283,7 @@ export const components: ChartNavData[] = [
         },
     },
     {
-        name: 'Waffle',
+        name: 'Waffle图',
         id: 'waffle',
         tags: waffle.Waffle.tags,
         flavors: {
@@ -296,27 +296,27 @@ export const components: ChartNavData[] = [
 
 export const guides = [
     {
-        label: 'Axes',
+        label: '轴',
         path: '/guides/axes/',
     },
     {
-        label: 'Colors',
+        label: '颜色',
         path: '/guides/colors/',
     },
     {
-        label: 'Legends',
+        label: '图例',
         path: '/guides/legends/',
     },
     {
-        label: 'Gradients',
+        label: '渐变',
         path: '/guides/gradients/',
     },
     {
-        label: 'Patterns',
+        label: '图案',
         path: '/guides/patterns/',
     },
     {
-        label: 'Theming',
+        label: '主题',
         path: '/guides/theming/',
     },
 ]

@@ -19,7 +19,7 @@ export const ComponentsFilters = memo(
                         onChange(null)
                     }}
                 >
-                    All
+                    全部
                 </Item>
                 {filters.map(filter => (
                     <Item
