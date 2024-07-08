@@ -54,7 +54,7 @@ export const MarginControl = ({
         >
             <PropertyHeader {...property} context={context} />
             <Grid>
-                <Label htmlFor={`${id}-top`}>top</Label>
+                <Label htmlFor={`${id}-top`}>上</Label>
                 <TextInput
                     id={`${id}-top`}
                     value={value.top}
@@ -64,7 +64,7 @@ export const MarginControl = ({
                     onFocus={handleFocus('top')}
                     onBlur={handleBlur}
                 />
-                <Label htmlFor={`${id}-right`}>right</Label>
+                <Label htmlFor={`${id}-right`}>右</Label>
                 <TextInput
                     id={`${id}-right`}
                     value={value.right}
@@ -77,7 +77,7 @@ export const MarginControl = ({
                 <BoxCell>
                     <Box side={side} />
                 </BoxCell>
-                <Label htmlFor={`${id}-bottom`}>bottom</Label>
+                <Label htmlFor={`${id}-bottom`}>下</Label>
                 <TextInput
                     id={`${id}-bottom`}
                     value={value.bottom}
@@ -87,7 +87,7 @@ export const MarginControl = ({
                     onFocus={handleFocus('bottom')}
                     onBlur={handleBlur}
                 />
-                <Label htmlFor={`${id}-left`}>left</Label>
+                <Label htmlFor={`${id}-left`}>左</Label>
                 <TextInput
                     id={`${id}-left`}
                     value={value.left}

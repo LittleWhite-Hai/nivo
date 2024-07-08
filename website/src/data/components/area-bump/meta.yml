@@ -7,11 +7,4 @@ AreaBump:
     tags: []
     stories: []
     description: |
-        The AreaBump chart is similar to the [Bump](self:/bump/) chart,
-        but instead of only showing the ranking over time, it also shows
-        the values on the y-axis.
-
-        If you're only interested in ranking, you can also you use
-        the [Bump](self:/bump/) component.
-
-        The responsive alternative of this component is `ResponsiveAreaBump`.
+        AreaBump图表类似于 [Bump](self:/bump/) 图表， 但它不仅显示了时间的排名，还显示了 y轴上的值。 如果你只对排名感兴趣，你也可以使用 [Bump](self:/bump/) 组件。 该组件的响应式替代方案是ResponsiveAreaBump。

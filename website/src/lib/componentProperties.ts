@@ -8,11 +8,10 @@ export const themeProperty = (flavors: Flavor[]): ChartProperty => ({
     group: 'Style',
     type: 'Theme',
     required: false,
-    help: 'Define style for common elements such as labels, axes…',
+    help: '定义常见元素的样式，如标签、轴…',
     flavors,
     description: `
-        Please have a look at [the dedicated guide](self:/guides/theming/)
-        on how to define a theme for your charts. 
+        请查看[专用指南](self:/guides/theming/)，了解如何为图表定义主题。
     `,
 })
 

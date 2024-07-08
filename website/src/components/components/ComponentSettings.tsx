@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import media from '../../theming/mediaQueries'
 import { Flavor, ChartPropertiesGroup } from '../../types'
 import { ControlsGroup } from '../controls/ControlsGroup'
+import translate from '../../translate'
 
 interface ComponentSettingsProps<Settings = any> {
     flavors: Flavor[]
@@ -24,7 +25,7 @@ export function ComponentSettings<Settings = any>({
             {groups.map(group => {
                 return (
                     <Group key={group.name}>
-                        <Title>{group.name}</Title>
+                        <Title>{translate(group.name)}</Title>
                         <ControlsGroup
                             name={group.name}
                             flavors={flavors}

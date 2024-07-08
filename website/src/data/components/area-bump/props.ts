@@ -21,26 +21,24 @@ const props: ChartProperty[] = [
     {
         key: 'data',
         group: 'Base',
-        help: 'Chart data.',
+        help: '数据',
         description: `
-            Chart data, which must conform to this structure:
+数据须符合这个结构:
 
-            \`\`\`
-            {
-                id:   string
-                data: {
-                    x: number | string
-                    y: number
-                }[]
-            }[]
-            \`\`\`
+\`\`\`
+{
+    id:   string
+    data: {
+        x: number | string
+        y: number
+    }[]
+}[]
+\`\`\`
 
-            This component assumes that every serie contains all
-            x values sorted the same way they should appear on the chart.
-            
-            As this component is a TypeScript generic, it is possible to customize
-            the datum using the \`Datum\` arg, and it's also possible to add
-            some extra properties to the series by passing \`ExtraProps\`.
+
+    该组件假设每个序列包含所有x值，排序方式与它们在图表上显示的方式相同。 
+ 
+由于该组件是一个TypeScript泛型，所以可以使用datum参数自定义数据，也可以通过传递ExtraProps来为该系列添加一些额外的属性。
         `,
         required: true,
         type: 'AreaBumpSerie<Datum, ExtraProps>[]',
@@ -50,7 +48,7 @@ const props: ChartProperty[] = [
     {
         key: 'align',
         group: 'Base',
-        help: `Chart alignment.`,
+        help: `对齐方式`,
         type: 'string',
         required: false,
         defaultValue: defaults.align,
@@ -68,15 +66,15 @@ const props: ChartProperty[] = [
         key: 'interpolation',
         group: 'Base',
         type: 'string',
-        help: `Area interpolation.`,
+        help: `区域插值`,
         required: false,
         defaultValue: defaults.interpolation,
         flavors: allFlavors,
         control: {
             type: 'radio',
             choices: [
-                { label: 'smooth', value: 'smooth' },
-                { label: 'linear', value: 'linear' },
+                { label: '平滑', value: 'smooth' },
+                { label: '直线', value: 'linear' },
             ],
         },
     },
@@ -84,7 +82,7 @@ const props: ChartProperty[] = [
         key: 'spacing',
         group: 'Base',
         type: 'number',
-        help: 'Spacing.',
+        help: '线条间距',
         required: false,
         flavors: allFlavors,
         defaultValue: defaults.spacing,
@@ -96,7 +94,7 @@ const props: ChartProperty[] = [
     },
     {
         key: 'xPadding',
-        help: 'X padding.',
+        help: 'X轴填充.',
         group: 'Base',
         type: 'number',
         required: false,

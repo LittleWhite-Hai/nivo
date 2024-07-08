@@ -26,6 +26,8 @@ const map: Record<string, string> = {
     TreeMap: '矩形树图',
     Voronoi: 'Voronoi图',
     Waffle: 'Waffle图',
+    Style: '风格',
+    Base: '基础',
 }
 export default function translate(str: string): string {
     const res = map[str]

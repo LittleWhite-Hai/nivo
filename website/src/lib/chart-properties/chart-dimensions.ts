@@ -5,12 +5,11 @@ export const chartWidth = (flavors: Flavor[]): ChartProperty => ({
     group: 'Base',
     type: 'number',
     required: true,
-    help: 'Chart width.',
+    help: '宽度',
     description: `
-        Not required if using responsive component, \`<Responsive* />\`.
+        如果使用响应式组件\`<Responsive* />\`，则不是required
 
-        Also note that width does not include labels/axes,
-        so you should add enough margin to display them.
+        宽度不包括标签/轴，应添加足够的边距来显示它们
     `,
     flavors,
     enableControlForFlavors: ['api'],
@@ -28,12 +27,11 @@ export const chartHeight = (flavors: Flavor[]): ChartProperty => ({
     group: 'Base',
     type: 'number',
     required: true,
-    help: 'Chart height.',
+    help: '高度',
     description: `
-        Not required if using responsive component, \`<Responsive* />\`.
+        如果使用响应式组件\`<Responsive* />\`，则不是required
 
-        Also note that height does not include labels/axes,
-        so you should add enough margin to display them.
+        高度不包括标签/轴， 应添加足够的页边距来显示它们
     `,
     flavors,
     enableControlForFlavors: ['api'],
@@ -49,7 +47,7 @@ export const chartHeight = (flavors: Flavor[]): ChartProperty => ({
 export const chartMargin = (flavors: Flavor[]): ChartProperty => ({
     key: 'margin',
     group: 'Base',
-    help: 'Chart margin.',
+    help: '边距',
     type: 'object',
     required: false,
     flavors,
